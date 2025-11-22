@@ -24,7 +24,7 @@ export default function BlackbodyPlot() {
   }), [T]);
 
   return (
-    <div className="max-w-3xl mx-auto text-center">
+    <div className="max-w-3xl mx-auto text-center" style={{ width: '100%', height: '320px' }} >
       <h2 className="text-xl font-semibold mb-2">Blackbody Radiation Curve</h2>
       <input type="range" min="1000" max="10000" value={T} onChange={e => setT(+e.target.value)} className="w-1/2" />
       <span className="ml-2">{T} K</span>

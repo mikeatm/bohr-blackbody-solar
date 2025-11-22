@@ -28,7 +28,7 @@ export default function SolarSpectrum() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto text-center">
+    <div className="max-w-3xl mx-auto text-center" style={{ width: '100%', height: '320px' }}>
       <h2 className="text-xl font-semibold mb-2">Solar Spectrum (Sample NASA/NOAA Data)</h2>
       {data.length > 0 ? (
         <Line data={chartData} options={{ responsive: true, plugins: { legend: { labels: { color: '#fff' } } }, scales: { x: { title: { display: true, text: 'Wavelength (nm)', color: '#fff' }, ticks: { color: '#fff' } }, y: { title: { display: true, text: 'Irradiance (W/m²/nm)', color: '#fff' }, ticks: { color: '#fff' } } } }} />
